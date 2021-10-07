@@ -7,5 +7,10 @@ gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
-<audio src="g0 (online-audio-converter.com).mp3" autoplay controls>
-<\audio>
+
+
+<audio controls="controls">
+  <source type="g0 (online-audio-converter.com).mp3" src="g0 (online-audio-converter.com).mp3.mp3"></source>
+
+  <p>Your browser does not support the audio element.</p>
+</audio>
