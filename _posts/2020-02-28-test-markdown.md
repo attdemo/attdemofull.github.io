@@ -12,4 +12,4 @@ comments: true
 <audio controls>
   <source type="g0 (online-audio-converter.com).mp3" src="g0 (online-audio-converter.com).mp3.mp3"></source>
 </audio>
-<audio id="ABC" src="ABC.wav"></audio><button onclick="playAudio('ABC')" type="button">play</button>
+<audio id="ABC" src="g0 (online-audio-converter.com).mp3.wav"></audio><button onclick="playAudio('ABC')" type="button">play</button>
