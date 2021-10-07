@@ -9,6 +9,6 @@ comments: true
 ---
 
 
-<audio controls="controls">
+<audio controls>
   <source type="g0 (online-audio-converter.com).mp3" src="g0 (online-audio-converter.com).mp3.mp3"></source>
 </audio>
