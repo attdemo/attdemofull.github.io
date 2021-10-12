@@ -4,53 +4,126 @@ title: Model Attribution
 ---
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body leftmargin="0"  rightmargin="0" topmargin="0" bottommargin="0">
 
-<style>
-	div.ex1{
-		width:600px;
-		background-color: yellow;
-		padding: 5px;
-	}
-    
-	div.ex2{
-		width: 800px;
-		padding: 25px; /* 패딩을 주니 width가 300+25(왼)+25(오) 된다.  */
-		/* 레이아웃 짤 때 중요!!!   */
-		background: lightblue;
-		
-		border: 10px solid red; /*보더를 주니 width가 300+25+25+10+10이 됨*/
-		/*너비가 달라지는 거 꼭 기억하자 */
-	}
+<font size="5em" color="black">
+Original fake speech samples <br>
+</font>
+<font size="4em" color="black">
+MELGAN <br>
+</font>
+<audio controls src="G0/93.wav" type="wav" ></audio>
+<audio controls src="G0/95.wav" type="wav" ></audio>
+<audio controls src="G0/96.wav" type="wav" ></audio>
+<audio controls src="G0/98.wav" type="wav" ></audio>
+<audio controls src="G0/99.wav" type="wav" ></audio> <br>
 
-	
-	div.ex3{
-		width: 300px;
-		padding: 25px; 
-		background: lightblue;
-		
-		border: 10px solid red; 
-		/* padding 크기에 상관 없이 너비를 300px로 유지하자 */
-		box-sizing: border-box; 
-	}
-</style>
+<font size="4em" color="black">
+WAVEGAN <br>
+</font>
+<audio controls src="G0_WG/0.wav" type="wav" ></audio>
+<audio controls src="G0_WG/1.wav" type="wav" ></audio>
+<audio controls src="G0_WG/4.wav" type="wav" ></audio> <br>
 
-</head>
-<body>
-<!-- padding + element width  관계-->
+<font size="5em" color="black">
+Fake speech samples from user-end models <br>
+<font size="4em" color="black">
+MELGAN - Non-robust version  <br>
+</font>
+<audio controls src="user_end_models/93.wav" type="wav" ></audio>
+<audio controls src="user_end_models/95.wav" type="wav" ></audio>
+<audio controls src="user_end_models/96.wav" type="wav" ></audio>
+<audio controls src="user_end_models/98.wav" type="wav" ></audio>
+<audio controls src="user_end_models/99.wav" type="wav" ></audio> <br>
 
-<div class="ex1"><audio controls src="Speed/93.wav" type="wav" ></audio></div>
-<br>
-<div class="ex2">padding + width</div>
-<br>
-<div class="ex3">padding + width</div>
+<font size="4em" color="black">
+WAVEGAN - Non-robust version  <br>
+</font>  
+<audio controls src="non_robust_wg/0.wav" type="wav" ></audio>
+<audio controls src="non_robust_wg/1.wav" type="wav" ></audio>
+<audio controls src="non_robust_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Robust version <br>
+</font>
+<audio controls src="robust/93.wav" type="wav" ></audio>
+<audio controls src="robust/95.wav" type="wav" ></audio>
+<audio controls src="robust/96.wav" type="wav" ></audio>
+<audio controls src="robust/98.wav" type="wav" ></audio>
+<audio controls src="robust/99.wav" type="wav" ></audio>  <br>
 
+<font size="4em" color="black">
+WAVEGAN - Robust version <br>
+</font>
+<audio controls src="robust_wg/0.wav" type="wav" ></audio>
+<audio controls src="robust_wg/1.wav" type="wav" ></audio>
+<audio controls src="robust_wg/4.wav" type="wav" ></audio> <br>
+  
 
-</body>
-</html>
+<font size="5em" color="black">
+<B>Post-processed original fake speech samples</B> <br>
+</font>
+
+<font size="4em" color="black">
+MELGAN - Noise <br>
+</font>
+<audio controls src="Noise/93.wav" type="wav" ></audio>
+<audio controls src="Noise/95.wav" type="wav" ></audio>
+<audio controls src="Noise/96.wav" type="wav" ></audio>
+<audio controls src="Noise/98.wav" type="wav" ></audio>
+<audio controls src="Noise/99.wav" type="wav" ></audio> <br>
+
+<font size="4em" color="black">
+WAVEGAN - Noise <br>
+</font>
+<audio controls src="Noise_wg/0.wav" type="wav" ></audio>
+<audio controls src="Noise_wg/1.wav" type="wav" ></audio>
+<audio controls src="Noise_wg/4.wav" type="wav" ></audio> <br>
+
+<font size="4em" color="black">
+MELGAN - Gain <br>
+</font>
+<audio controls src="Gain/93.wav" type="wav" ></audio>
+<audio controls src="Gain/95.wav" type="wav" ></audio>
+<audio controls src="Gain/96.wav" type="wav" ></audio>
+<audio controls src="Gain/98.wav" type="wav" ></audio>
+<audio controls src="Gain/99.wav" type="wav" ></audio>  <br>
+
+<font size="4em" color="black">
+WAVEGAN - Gain <br>
+</font>
+<audio controls src="Gain_wg/0.wav" type="wav" ></audio>
+<audio controls src="Gain_wg/1.wav" type="wav" ></audio>
+<audio controls src="Gain_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Speed <br>
+</font>
+<audio controls src="Speed/93.wav" type="wav" ></audio>
+<audio controls src="Speed/95.wav" type="wav" ></audio>
+<audio controls src="Speed/96.wav" type="wav" ></audio>
+<audio controls src="Speed/98.wav" type="wav" ></audio>
+<audio controls src="Speed/99.wav" type="wav" ></audio>  <br>
+
+<font size="4em" color="black">
+WAVEGAN - Speed <br>
+</font>
+<audio controls src="Speed_wg/0.wav" type="wav" ></audio>
+<audio controls src="Speed_wg/1.wav" type="wav" ></audio>
+<audio controls src="Speed_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Combined Passfilter <br>
+</font>
+<audio controls src="Passfilter/93.wav" type="wav" ></audio>
+<audio controls src="Passfilter/95.wav" type="wav" ></audio>
+<audio controls src="Passfilter/96.wav" type="wav" ></audio>
+<audio controls src="Passfilter/98.wav" type="wav" ></audio>
+<audio controls src="Passfilter/99.wav" type="wav" ></audio>  <br>
+  
+<font size="4em" color="black">
+WAVEGAN - Combined Passfilter <br>
+</font>
+<audio controls src="Passfilter_wg/0.wav" type="wav" ></audio>
+<audio controls src="Passfilter_wg/1.wav" type="wav" ></audio>
+<audio controls src="Passfilter_wg/4.wav" type="wav" ></audio> <br>
