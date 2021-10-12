@@ -23,7 +23,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 1.875rem 0;
+  margin: 0 0;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -210,7 +210,7 @@ img {
   border-width: 0.4em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 200px) {
   .navbar-custom {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -235,7 +235,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 200px) {
   .navbar-custom .nav-item.dropdown:hover {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -264,7 +264,7 @@ img {
   color: {{ site.navbar-text-col | default: "#404040" }};
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 200px) {
   .navbar-custom .nav-item.dropdown .dropdown-menu {
     text-align: center;
   }
