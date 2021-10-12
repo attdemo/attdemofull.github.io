@@ -3,7 +3,6 @@ layout: base
 ---
 
 {% include header.html type="page" %}
-
 <font size="5em" color="black">
 Original fake speech samples <br>
 </font>
@@ -16,6 +15,115 @@ MELGAN <br>
 <audio controls src="G0/98.wav" type="wav" ></audio>
 <audio controls src="G0/99.wav" type="wav" ></audio> <br>
 
+<font size="4em" color="black">
+WAVEGAN <br>
+</font>
+<audio controls src="G0_WG/0.wav" type="wav" ></audio>
+<audio controls src="G0_WG/1.wav" type="wav" ></audio>
+<audio controls src="G0_WG/4.wav" type="wav" ></audio> <br>
+
+<font size="5em" color="black">
+Fake speech samples from user-end models <br>
+<font size="4em" color="black">
+MELGAN - Non-robust version  <br>
+</font>
+<audio controls src="user_end_models/93.wav" type="wav" ></audio>
+<audio controls src="user_end_models/95.wav" type="wav" ></audio>
+<audio controls src="user_end_models/96.wav" type="wav" ></audio>
+<audio controls src="user_end_models/98.wav" type="wav" ></audio>
+<audio controls src="user_end_models/99.wav" type="wav" ></audio> <br>
+
+<font size="4em" color="black">
+WAVEGAN - Non-robust version  <br>
+</font>  
+<audio controls src="non_robust_wg/0.wav" type="wav" ></audio>
+<audio controls src="non_robust_wg/1.wav" type="wav" ></audio>
+<audio controls src="non_robust_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Robust version <br>
+</font>
+<audio controls src="robust/93.wav" type="wav" ></audio>
+<audio controls src="robust/95.wav" type="wav" ></audio>
+<audio controls src="robust/96.wav" type="wav" ></audio>
+<audio controls src="robust/98.wav" type="wav" ></audio>
+<audio controls src="robust/99.wav" type="wav" ></audio>  <br>
+
+<font size="4em" color="black">
+WAVEGAN - Robust version <br>
+</font>
+<audio controls src="robust_wg/0.wav" type="wav" ></audio>
+<audio controls src="robust_wg/1.wav" type="wav" ></audio>
+<audio controls src="robust_wg/4.wav" type="wav" ></audio> <br>
+  
+
+<font size="5em" color="black">
+<B>Post-processed original fake speech samples</B> <br>
+</font>
+
+<font size="4em" color="black">
+MELGAN - Noise <br>
+</font>
+<audio controls src="Noise/93.wav" type="wav" ></audio>
+<audio controls src="Noise/95.wav" type="wav" ></audio>
+<audio controls src="Noise/96.wav" type="wav" ></audio>
+<audio controls src="Noise/98.wav" type="wav" ></audio>
+<audio controls src="Noise/99.wav" type="wav" ></audio> <br>
+
+<font size="4em" color="black">
+WAVEGAN - Noise <br>
+</font>
+<audio controls src="Noise_wg/0.wav" type="wav" ></audio>
+<audio controls src="Noise_wg/1.wav" type="wav" ></audio>
+<audio controls src="Noise_wg/4.wav" type="wav" ></audio> <br>
+
+<font size="4em" color="black">
+MELGAN - Gain <br>
+</font>
+<audio controls src="Gain/93.wav" type="wav" ></audio>
+<audio controls src="Gain/95.wav" type="wav" ></audio>
+<audio controls src="Gain/96.wav" type="wav" ></audio>
+<audio controls src="Gain/98.wav" type="wav" ></audio>
+<audio controls src="Gain/99.wav" type="wav" ></audio>  <br>
+
+<font size="4em" color="black">
+WAVEGAN - Gain <br>
+</font>
+<audio controls src="Gain_wg/0.wav" type="wav" ></audio>
+<audio controls src="Gain_wg/1.wav" type="wav" ></audio>
+<audio controls src="Gain_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Speed <br>
+</font>
+<audio controls src="Speed/93.wav" type="wav" ></audio>
+<audio controls src="Speed/95.wav" type="wav" ></audio>
+<audio controls src="Speed/96.wav" type="wav" ></audio>
+<audio controls src="Speed/98.wav" type="wav" ></audio>
+<audio controls src="Speed/99.wav" type="wav" ></audio>  <br>
+
+<font size="4em" color="black">
+WAVEGAN - Speed <br>
+</font>
+<audio controls src="Speed_wg/0.wav" type="wav" ></audio>
+<audio controls src="Speed_wg/1.wav" type="wav" ></audio>
+<audio controls src="Speed_wg/4.wav" type="wav" ></audio> <br>
+  
+<font size="4em" color="black">
+MELGAN - Combined Passfilter <br>
+</font>
+<audio controls src="Passfilter/93.wav" type="wav" ></audio>
+<audio controls src="Passfilter/95.wav" type="wav" ></audio>
+<audio controls src="Passfilter/96.wav" type="wav" ></audio>
+<audio controls src="Passfilter/98.wav" type="wav" ></audio>
+<audio controls src="Passfilter/99.wav" type="wav" ></audio>  <br>
+  
+<font size="4em" color="black">
+WAVEGAN - Combined Passfilter <br>
+</font>
+<audio controls src="Passfilter_wg/0.wav" type="wav" ></audio>
+<audio controls src="Passfilter_wg/1.wav" type="wav" ></audio>
+<audio controls src="Passfilter_wg/4.wav" type="wav" ></audio> <br>
 
 
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
