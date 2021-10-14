@@ -4,11 +4,25 @@ layout: base
 
 {% include header.html type="page" %}
 <html>
-  <body bgcolor = "blue">
+   <style>
+      h1 {
+        background-color: lightblue;
+      }
+      h2 {
+        background-color: rgb(142, 191, 66);
+      }
+      p {
+        background-color: hsl(300, 100%, 25%);
+      }
+      span {
+        background-color: rgba(255, 127, 80, 0.58);
+      }
+    </style>
+  <body>
       <h1><font size="5em" color="black">
         <B>Original fake speech samples</B> - <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;G_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;G_{0}" title="\large G_{0}" /></a><br>
         </font></h1>
-      <p><font size="4em" color="black">
+        <font size="4em" color="black">
           MELGAN <br>
           </font>
           <audio controls src="G0/93.wav" type="wav" ></audio>
@@ -20,27 +34,11 @@ layout: base
           </font>
           <audio controls src="G0_WG/0.wav" type="wav" ></audio>
           <audio controls src="G0_WG/1.wav" type="wav" ></audio>
-          <audio controls src="G0_WG/4.wav" type="wav" ></audio> <br></p>
+          <audio controls src="G0_WG/4.wav" type="wav" ></audio> <br>
    </body>
-   <body bgcolor = "green">
-        <h2><font size="5em" color="black">
-          <B>Original fake speech samples</B> - <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;G_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;G_{0}" title="\large G_{0}" /></a><br>
-          </font></h2>
-        <p1><font size="4em" color="black">
-            MELGAN <br>
-            </font>
-            <audio controls src="G0/93.wav" type="wav" ></audio>
-            <audio controls src="G0/95.wav" type="wav" ></audio>
-            <audio controls src="G0/96.wav" type="wav" ></audio> <br>
-
-            <font size="4em" color="black">
-            WAVEGAN <br>
-            </font>
-            <audio controls src="G0_WG/0.wav" type="wav" ></audio>
-            <audio controls src="G0_WG/1.wav" type="wav" ></audio>
-            <audio controls src="G0_WG/4.wav" type="wav" ></audio> <br></p1>
-    </body> 
 </html>
+
+
 
 
 <font size="5em" color="black">
